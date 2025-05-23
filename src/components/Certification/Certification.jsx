@@ -63,7 +63,7 @@ const Certification = () => {
     return (
         <>
             <section
-                id="skills"
+                id="certification"
                 className="py-24 pb-2 px-[8vw] w-full font-sans bg-[#050716aa] "
             >
                 <div data-aos="fade-down" className="text-center mb-8">

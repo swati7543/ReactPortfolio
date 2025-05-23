@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   // Smooth scroll function
@@ -15,35 +16,34 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
         <h2 className="text-xl bg-clip-text text-transparent font-semibold bg-gradient-to-r from-cyan-400 to-blue-500">Swati Kumari</h2>
-
-        {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
           {[
-            { name: "About", id: "about" },
-            { name: "Skills", id: "skills" },
-            { name: "Experience", id: "experience" },
-            { name: "Projects", id: "projects" },
-            { name: "Education", id: "education" },
+            { name: "About", path: "/about" },
+            { name: "Skills", path: "/skills" },
+            { name: "Projects", path: "/project" },   // route is 'project' not 'projects'
+            { name: "Education", path: "/education" },
+            { name: "Certification", path: "/certification" },
           ].map((item, index) => (
-            <button
+            <Link
               key={index}
-              onClick={() => handleScroll(item.id)}
+              to={item.path}
               className="hover:text-purple-500 text-sm sm:text-base my-1"
             >
               {item.name}
-            </button>
+            </Link>
           ))}
         </nav>
+
 
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaFacebook />, link: "https://www.facebook.com/tarun.kaushik.3511041/" },
-            { icon: <FaTwitter />, link: "https://twitter.com/CodingMaster6?s=09" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/tarun-kaushik-553b441a4" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
-            { icon: <FaYoutube />, link: "https://www.youtube.com/codingmasteryt" },
-            
+            { icon: <FaFacebook /> },
+            { icon: <FaTwitter /> },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/swati-kumari-59b380278/" },
+            { icon: <FaInstagram /> },
+            { icon: <FaYoutube /> },
+
           ].map((item, index) => (
             <a
               key={index}
