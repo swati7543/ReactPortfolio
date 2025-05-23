@@ -16,8 +16,11 @@ const Education = () => {
     return (
         <div className="flex flex-col items-center  p-10 md:pt-20 text-white">
             <div data-aos="fade-down" className="text-center mb-8">
-                <h2 className="text-3xl sm:text-4xl font-bold text-white">Education</h2>
-                <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2 "></div>
+
+                <div data-aos="fade-down" className="text-center mb-8">
+                    <h2 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 ">Education  </h2>
+                    <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></div>
+                </div>
                 <p className="text-gray-400 mt-4 text-lg font-semibold mb-10">
                     My education has been a journey of learning and development. Here are the details of my academic background
                 </p>
@@ -40,7 +43,7 @@ const Education = () => {
                                 className="bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 sm:w-[48%] rounded-2xl border border-white/20 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] hover:scale-105 duration-300"
                             >
                                 <div className="text-2xl sm:text-3xl font-semibold text-gray-400 mb-4 text-center">
-                                    <h4 className="text-white">{education.degree}</h4>
+                                    <h3 className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 ">{education.degree}</h3>
                                     <h3 className="text-lg text-gray-300">{education.school}</h3>
                                     <span className="block text-sm text-purple-400">{education.date}</span>
                                 </div>

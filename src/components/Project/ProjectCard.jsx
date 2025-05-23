@@ -19,13 +19,13 @@ const ProjectCard = ({ title, main, href ,sourselink,imgsrc }) => {
                     <button className="cursor-pointer
                  text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 
                  hover:opacity-85 durat0ion-300 hover:scale-105 font-semibold 
-                rounded-3xl bg-[#8245ec]">
+                rounded-3xl bg-gradient-to-r from-cyan-400 to-blue-500">
                         Demo
                     </button>
                 </a>
                 <a href={sourselink} target="_blank" rel="noopener noreferrer">
                 <button className='cursor-pointer
-                 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#8245ec]'>Source Code</button>
+                 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-gradient-to-r from-cyan-400 to-blue-500'>Source Code</button>
                 </a>
             </div>
         </div>

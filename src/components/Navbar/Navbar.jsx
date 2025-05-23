@@ -30,8 +30,8 @@ const Navbar = () => {
     { id: 'skills', label: "Skills", path: "/skills" },
     // { id: 'experience', label: "Experience", path: "/experience" },
     { id: 'project', label: "Projects", path: "/project" },
-    // { id: 'work', label: "Work", path: "/work" },
     { id: 'education', label: "Education", path: "/education" },
+    { id: 'certification', label: "Certification", path: "/certification" },
   ];
 
   useEffect(() => {

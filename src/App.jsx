@@ -10,6 +10,7 @@ import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import Cursor from './components/Cursor';
 import Snowfall from './components/Snowfall';
+import Certification from './components/Certification/Certification';
 
 
 function App() {
@@ -32,8 +33,8 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/project" element={<Project />} />
-          {/* <Route path="/work" element={<Work />} />  */}
           <Route path="/education" element={<Education />} />
+          <Route path="/certification" element={<Certification />} /> 
         </Routes>
 
         <Footer />

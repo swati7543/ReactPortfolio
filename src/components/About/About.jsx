@@ -65,7 +65,7 @@ const About = () => {
                         </motion.div>
                     </div>
                     <div className='py-20 flex items-center justify-center w-full'>
-                        <ul className='md:space-x-15 flex flex-wrap justify-center '>
+                        <ul className='gap-10  flex flex-wrap justify-center '>
                             {aboutinfo.map((ele, index) => {
                                 const animationType = index % 2 === 0 ? 'fade-down' : 'fade-up';
 
@@ -73,13 +73,13 @@ const About = () => {
                                     <div
                                         key={index}
                                         data-aos={animationType}
-                                        className="w-80 sm:w-96 h-auto flex items-start gap-4 p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)] transition-all duration-500 mb-10"
+                                        className="w-auto md:w-96 h-auto flex items-start  p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)] transition-all duration-500 mb-10"
                                     >
                                         <div className="min-w-[36px] min-h-[36px] mt-1 text-blue-500">
                                             <IoArrowForward size={28} />
                                         </div>
                                         <div className="flex-1">
-                                            <h1 className="text-xl sm:text-2xl font-semibold text-white mb-2">{ele.heading}</h1>
+                                            <h1 className="text-xl sm:text-2xl  mb-2  font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 ">{ele.heading}</h1>
                                             <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
                                                 {ele.desc}
                                             </p>
