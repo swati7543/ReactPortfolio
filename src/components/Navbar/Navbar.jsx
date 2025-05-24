@@ -95,8 +95,8 @@ const Navbar = () => {
 
       <div className='flex  justify-center items-center md:hidden'>
         {isOpen && (
-          <div className='absolute top-16 left-1/8 w-4/5  bg-opacity-50 backdrop:filter backdrop-blur-lg z-50 rounded-lg shadow-lg'>
-            <ul className='flex flex-col items-center space-y-4 text-gray-300'>
+          <div className='absolute top-16 left-4/8 w-1/2  bg-opacity-50 backdrop:filter backdrop-blur-lg z-50 rounded-lg shadow-lg'>
+            <ul className='flex flex-col items-start px-5 py-2 space-y-4 text-gray-300'>
               {
                 menuItem.map((item) => (
                   <Link key={item.id} to={item.path} className={`cursor-pointer hover:text-black ${activeSection === item.id ? "text-[#8245ec]" : ""}`}>
@@ -107,7 +107,7 @@ const Navbar = () => {
                 ))
               }
             </ul>
-            <div className='flex space-x-4 w-full justify-center py-4'>
+            <div className='flex space-x-4 w-full justify-start px-5 py-4'>
               <a href="https://github.com/swati7543/" target='_blank' rel='' className='text-gray-300 hover:text-white'>
                 <FaGithub size={24} />
               </a>

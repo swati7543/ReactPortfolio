@@ -26,7 +26,7 @@ const Home = () => {
                         <TextChanger texts={["Hi, I'm Swati", "Frontend Developer", "Welcome!"]} speed={100} />
                     </h1>
                     <div data-aos="fade-up">
-                        <p className="text-sm md:text-2xl tracking-tight mt-4">
+                        <p className="text-sm md:p-0 p-2 md:text-2xl tracking-tight mt-4">
                             "A front-end developer passionate about building modern, responsive, and user-friendly websites using React, Tailwind CSS, and more."
                             {/* <TextChanger texts={["A front-end developer passionate about building modern, responsive, and user-friendly websites using React, Tailwind CSS, and more."]}  speed={80}/> */}
 

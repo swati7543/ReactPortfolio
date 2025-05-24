@@ -26,7 +26,7 @@ const Project = () => {
                 </p>
             </div>
             {/* <h1 data-aos="fade-down"  className='text-2xl md:text-4xl text-white font-bold'>Projects </h1> */}
-            <div data-aos="fade-up" className='py-12 justify-center flex flex-wrap gap-8'>
+            <div data-aos="fade-up" className='py-12 px-2 w-full md:justify-center flex flex-nowrap md:flex-wrap overflow-x-auto overflow-y-hidden md:overflow-visible scrollbar-hide gap-8'>
                 <ProjectCard imgsrc={myntraImg} title="Myntra Clone" sourselink={"https://github.com/swati7543/myntra"} main="this is a bloggin website created in react js and used some component library" />
                 <ProjectCard imgsrc={spotifyImg} title="spotify-app" href={"https://spotify-app-omega-jade.vercel.app"} sourselink={"https://github.com/swati7543/spotify-app"} main="this is a bloggin website created in react js and used some component library" />
                 <ProjectCard imgsrc={weather} title="weather search app" sourselink={"https://github.com/swati7543/weather"} main="this is a bloggin website created in react js and used some component library" />

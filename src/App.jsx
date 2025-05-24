@@ -22,16 +22,11 @@ function App() {
         <Cursor />
         <Snowfall />
         <Navbar />
-        {/* <Home /> */}
-        {/* <About />
-        <Experience />
-        <Project />
-        <Education/> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/experience" element={<Experience />} />
+          {/* <Route path="/experience" element={<Experience />} /> */}
           <Route path="/project" element={<Project />} />
           <Route path="/education" element={<Education />} />
           <Route path="/certification" element={<Certification />} /> 

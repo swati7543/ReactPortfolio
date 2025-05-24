@@ -71,20 +71,18 @@ const Certification = () => {
                     <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></div>
                     <p className='text-gray-400 mt-4 text-lg font-semibold'>My certifications reflect my commitment to continuous learning and skill development. Here's a glimpse of the courses and achievements I've completed across various platforms.</p>
                 </div>
-                <div className='py-10 flex items-center justify-center w-full'>
-                    <ul className='gap-10  flex flex-wrap justify-center '>
+                <div className='py-10 px-1 flex overflow-scroll  w-full overflow-x-auto overflow-y-hidden md:overflow-visible scrollbar-hide'>
+                    <ul className='gap-10  flex flex-nowrap md:flex-wrap justify-center '>
                         {aboutinfo.map((ele, index) => {
                             const animationType = index % 2 === 0 ? 'fade-right' : 'fade-left';
                             return (
                                 <div
                                     key={index}
                                     data-aos={animationType}
-                                    className="w-auto md:w-96 h-auto flex items-start  p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)]   mb-10  transition-transform duration-500
+                                    className="w-64 md:w-96 h-auto flex items-start  p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)]   mb-10  transition-transform duration-500
                                     "
                                 >
-
-
-                                    <div className="flex-1">
+                                    <div className="flex-1  ">
                                         {ele.img && (
                                             <img
                                                 src={ele.img}
@@ -103,16 +101,16 @@ const Certification = () => {
                                         </div>
                                         <div>
 
-                                        {ele.link && (
-                                            <a
-                                                href={ele.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-block mt-3 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:scale-105 transition-transform text-sm"
-                                            >
-                                                View Certificate
-                                            </a>
-                                        )}
+                                            {ele.link && (
+                                                <a
+                                                    href={ele.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-block mt-3 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:scale-105 transition-transform text-sm"
+                                                >
+                                                    View Certificate
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                 </div>);

@@ -58,13 +58,13 @@ const Skills = ({ percent = 90, title = "Creativity" }) => {
             A collection of my technical skills and expertise honed through various projects and experiences
           </p>
         </div>
-        <div className="text-white">
-          <p>
+        <div data-aos="fade-up">
+          <p className="text-gray-200 mt-4  font-medium">
             I specialize in crafting responsive and interactive user interfaces using modern web technologies. My toolkit includes HTML, CSS, JavaScript, and React, with a strong eye for design, accessibility, and performance. I'm passionate about building seamless digital experiences that not only work—but wow. As I continue to grow, I’m diving deeper into advanced animations, state management, and UI/UX best practices to become a well-rounded frontend engineer.
           </p>
         </div>
         {/* Skill Categories */}
-        <div className="flex flex-col lg:flex-row flex-wrap gap-6 justify-between py-10">
+        <div className="flex w-full px-2 flex-nowrap md:flex-wrap  lg:flex-row  overflow-x-auto overflow-y-hidden md:overflow-visible scrollbar-hide gap-6 justify-between py-10">
           {SkillsInfo.map((category, index) => {
             const animationType = index % 2 === 0 ? 'fade-down' : 'fade-up';
 
@@ -73,37 +73,39 @@ const Skills = ({ percent = 90, title = "Creativity" }) => {
               <div
                 key={category.title}
                 data-aos={animationType}
-                className="bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-6 sm:py-8 w-full lg:w-[30%] rounded-2xl border border-white/20 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] hover:scale-105 duration-300"
+                className="w-64 md:w-96 h-auto flex items-start  p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)]   mb-10  transition-transform duration-500"
               >
-                <h3 className="text-2xl sm:text-3xl font-semibold text-gray-400 mb-4 text-center">
-                  {category.title}
-                </h3>
+                <div className="flex-1 w-96 ">
+                  < h3 className="text-2xl sm:text-3xl font-semibold text-gray-400 mb-4 text-center" >
+                    {category.title}
+                  </h3>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                  {category.skills.map((skill) => (
-                    <div
-                      key={skill.name}
-                      className="flex items-center justify-center space-x-2 border-2 border-gray-700 rounded-3xl py-2 px-3 text-center"
-                    >
-                      {/* Uncomment this if you're using icons */}
-                      {/* <img
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {category.skills.map((skill) => (
+                      <div
+                        key={skill.name}
+                        className="flex items-center justify-center space-x-2 border-2 border-gray-700 rounded-3xl py-2 px-3 text-center"
+                      >
+                        {/* Uncomment this if you're using icons */}
+                        {/* <img
               src={skill.logo}
               alt={`${skill.name} logo`}
               className="w-5 h-5 sm:w-6 sm:h-6"
             /> */}
-                      <span className="text-xs sm:text-sm text-gray-300">{skill.name}</span>
-                    </div>
-                  ))}
+                        <span className="text-xs sm:text-sm text-gray-300">{skill.name}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </div >
 
 
             )
           }
           )}
-        </div>
+        </div >
 
-      </section>
+      </section >
       <section
         id="skills"
         className="py-2 pb-2 px-[8vw]  font-sans bg-[#050716aa] "

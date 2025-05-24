@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import AboutImg from '../../assets/aboutImg.png'
 import { IoArrowForward } from "react-icons/io5";
-import { motion } from 'framer-motion';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,7 +29,7 @@ const About = () => {
         ,
     ]
     return (
-        <div id='About' className='  mb-2 text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center  shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-7'>
+        <div id='About' className='text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center  shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-7'>
             <div className='py-10 pb-24'>
                 <div data-aos="fade-down" className="text-center mb-8">
                     <h2 className="text-3xl sm:text-4xl font-bold text-white">About <span className='bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 text-3xl font-bold mb-6'>Me</span> </h2>
@@ -42,14 +41,12 @@ const About = () => {
                     <div data-aos="zoom-in-up" className='md:w-1/2'>
                         <img className='md:h-120' src={AboutImg} alt="About Img" />
                     </div>
-                    <div className="md:w-1/2 flex justify-center items-center ">
-                        <motion.div
-                            className="w-full text-white text-xl leading-relaxed tracking-wide"
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, ease: 'easeOut' }}
+                    <div className="md:w-1/2 flex justify-center items-center">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            className="w-full text-white md:text-xl leading-relaxed tracking-wide"
                         >
-
                             <p className="text-gray-300">
                                 Hey there! I’m <span className="text-cyan-400 font-semibold">Swati</span>, a frontend developer with a passion for clean design and smooth interactions. I specialize in transforming ideas into responsive, intuitive, and visually stunning websites using HTML, CSS, JavaScript, and React.
                             </p>
@@ -62,10 +59,11 @@ const About = () => {
                             <p className="text-cyan-300 mt-4 font-medium">
                                 Let’s connect and build something exceptional together!
                             </p>
-                        </motion.div>
+                        </div>
                     </div>
-                    <div className='py-20 flex items-center justify-center w-full'>
-                        <ul className='gap-10  flex flex-wrap justify-center '>
+
+                    <div className='py-20 flex   w-full  overflow-x-auto overflow-y-hidden md:overflow-visible scrollbar-hide'>
+                        <ul className='gap-10  flex flex-nowrap md:flex-wrap justify-center '>
                             {aboutinfo.map((ele, index) => {
                                 const animationType = index % 2 === 0 ? 'fade-down' : 'fade-up';
 
@@ -73,7 +71,7 @@ const About = () => {
                                     <div
                                         key={index}
                                         data-aos={animationType}
-                                        className="w-auto md:w-96 h-auto flex items-start  p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)] transition-all duration-500 mb-10"
+                                        className="w-64 md:w-96 h-auto flex items-start  p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)] transition-all duration-500 "
                                     >
                                         <div className="min-w-[36px] min-h-[36px] mt-1 text-blue-500">
                                             <IoArrowForward size={28} />
