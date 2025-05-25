@@ -43,7 +43,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`flex top-0 pb-2 w-full justify-center items-center  z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20] ${isScrolled ? "bg-[#050414] bg-opacity-50 backdrop:blur-md  shadow-md" : "bg-transparent"}`}>
+    <nav className={`flex top-0 pb-2 w-full justify-center items-center  z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[7vw] ${isScrolled ? "bg-[#050414] bg-opacity-50 backdrop:blur-md  shadow-md" : "bg-transparent"}`}>
       <div className='text-white  w-full flex  justify-between items-center'>
         <Link to={'/'}>
           <h3 className='cursor-pointer hover:text-cyan-400 font-bold'>Portfolio.</h3>
