@@ -1,9 +1,9 @@
 import React from 'react'
 import bannerImg from "../../assets/bannerImg.webp"
 
-const ProjectCard = ({ title, main, href, sourselink, imgsrc }) => {
+const ProjectCard = ({ title, main, href, sourselink, imgsrc,aos }) => {
     return (
-        <div className="w-96 md:w-80 h-auto flex items-start  p-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)]   mb-10  transition-transform duration-500"
+        <div data-aos={aos} className="w-96 md:w-80 h-auto flex items-start  p-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)]   mb-10  transition-transform duration-500"
         >
 
             <div className='flex-1 w-48 '>

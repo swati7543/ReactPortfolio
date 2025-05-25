@@ -60,11 +60,11 @@ const Skills = ({ percent = 90, title = "Creativity" }) => {
         </div>
         <div data-aos="fade-up">
           <p className="text-gray-200 mt-4  font-medium">
-            I specialize in crafting responsive and interactive user interfaces using modern web technologies. My toolkit includes HTML, CSS, JavaScript, and React, with a strong eye for design, accessibility, and performance. I'm passionate about building seamless digital experiences that not only work—but wow. As I continue to grow, I’m diving deeper into advanced animations, state management, and UI/UX best practices to become a well-rounded frontend engineer.
+            I specialize in crafting responsive and interactive user interfaces using modern web technologies. My toolkit includes HTML, CSS, JavaScript, and React, with a strong eye for design, accessibility, and performance. I'm passionate about building seamless digital experiences that not only work—but wow. As I continue to grow, I’m diving deeper into advanced animations, state management, and UI/UX best practices to become a well-rounded Software engineer.
           </p>
         </div>
         {/* Skill Categories */}
-        <div className="flex w-full px-2 flex-nowrap md:flex-wrap  lg:flex-row  overflow-x-auto overflow-y-hidden md:overflow-visible scrollbar-hide gap-6 justify-between py-10">
+        <div className="flex w-full px-2 flex-wrap  lg:flex-row  gap-6 justify-center py-10">
           {SkillsInfo.map((category, index) => {
             const animationType = index % 2 === 0 ? 'fade-down' : 'fade-up';
 

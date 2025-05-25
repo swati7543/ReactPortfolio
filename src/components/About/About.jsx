@@ -48,7 +48,7 @@ const About = () => {
                             className="w-full text-white md:text-xl leading-relaxed tracking-wide"
                         >
                             <p className="text-gray-300">
-                                Hey there! I’m <span className="text-cyan-400 font-semibold">Swati</span>, a frontend developer with a passion for clean design and smooth interactions. I specialize in transforming ideas into responsive, intuitive, and visually stunning websites using HTML, CSS, JavaScript, and React.
+                                Hey there! I’m <span className="text-cyan-400 font-semibold">Swati</span>, a Software developer with a passion for clean design and smooth interactions. I specialize in transforming ideas into responsive, intuitive, and visually stunning websites using HTML, CSS, JavaScript, and React.
                             </p>
                             <p className="text-gray-300 mt-4">
                                 I thrive on creating seamless digital experiences that work beautifully on any device. From designing pixel-perfect UIs to implementing performant frontend code, I enjoy every step of the development journey.
@@ -62,8 +62,8 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className='py-20 flex   w-full  overflow-x-auto overflow-y-hidden md:overflow-visible scrollbar-hide'>
-                        <ul className='gap-10  flex flex-nowrap md:flex-wrap justify-center '>
+                    <div className='py-20 flex w-full '>
+                        <ul className='gap-10  flex flex-wrap justify-center '>
                             {aboutinfo.map((ele, index) => {
                                 const animationType = index % 2 === 0 ? 'fade-down' : 'fade-up';
 
@@ -73,7 +73,7 @@ const About = () => {
                                         data-aos={animationType}
                                         className="w-64 md:w-96 h-auto flex items-start  p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)] transition-all duration-500 "
                                     >
-                                        <div className="min-w-[36px] min-h-[36px] mt-1 text-blue-500">
+                                        <div className="min-w-[36px] min-h-[36px] hidden md:block lg:block mt-1 text-blue-500">
                                             <IoArrowForward size={28} />
                                         </div>
                                         <div className="flex-1">

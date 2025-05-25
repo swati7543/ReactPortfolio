@@ -18,16 +18,16 @@ const Home = () => {
             <div className="relative  invert-0  mask-t-from-50% mask-b-from-50% bg-[url('https://images.unsplash.com/photo-1701760211427-e7a9068028b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] h-64 w-full bg-cover bg-center  min-h-screen flex items-center justify-center">
 
             </div>
-            <div className=" absolute  text-white flex  md:w-1/2 justify-between items-center md:items-start gap-10">
+            <div className=" absolute  text-white flex w-full md:w-1/2 justify-between items-center md:items-start gap-10">
                 {/* Left: Text Section */}
                 <div className="w-full md:w-full md:pt-10 text-center md:text-center">
 
-                    <h1 className="text-3xl md:text-6xl font-bold leading-normal tracking-tight">
-                        <TextChanger texts={["Hi, I'm Swati", "Frontend Developer", "Welcome!"]} speed={100} />
+                    <h1 className="text-3xl md:text-5xl font-bold leading-normal tracking-tight">
+                        <TextChanger texts={["Hi, I'm Swati Kumari", "Software Developer", "Welcome!"]} speed={100} />
                     </h1>
                     <div data-aos="fade-up">
                         <p className="text-sm md:p-0 p-2 md:text-2xl tracking-tight mt-4">
-                            "A front-end developer passionate about building modern, responsive, and user-friendly websites using React, Tailwind CSS, and more."
+                            "A Software developer passionate about building modern, responsive, and user-friendly websites using React, Tailwind CSS, and more."
                             {/* <TextChanger texts={["A front-end developer passionate about building modern, responsive, and user-friendly websites using React, Tailwind CSS, and more."]}  speed={80}/> */}
 
                         </p>

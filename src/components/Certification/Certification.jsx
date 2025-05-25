@@ -71,8 +71,8 @@ const Certification = () => {
                     <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></div>
                     <p className='text-gray-400 mt-4 text-lg font-semibold'>My certifications reflect my commitment to continuous learning and skill development. Here's a glimpse of the courses and achievements I've completed across various platforms.</p>
                 </div>
-                <div className='py-10 px-1 flex overflow-scroll  w-full overflow-x-auto overflow-y-hidden md:overflow-visible scrollbar-hide'>
-                    <ul className='gap-10  flex flex-nowrap md:flex-wrap justify-center '>
+                <div className='py-10 px-1 flex  w-full'>
+                    <ul className='gap-10  flex flex-wrap justify-center '>
                         {aboutinfo.map((ele, index) => {
                             const animationType = index % 2 === 0 ? 'fade-right' : 'fade-left';
                             return (

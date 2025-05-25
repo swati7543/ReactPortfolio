@@ -95,7 +95,7 @@ const Navbar = () => {
 
       <div className='flex  justify-center items-center md:hidden'>
         {isOpen && (
-          <div className='absolute top-16 left-4/8 w-1/2  bg-opacity-50 backdrop:filter backdrop-blur-lg z-50 rounded-lg shadow-lg'>
+          <div className='absolute top-16 left-5/8 w-1/2  bg-opacity-50 backdrop:filter backdrop-blur-lg z-50 rounded-lg shadow-lg'>
             <ul className='flex flex-col items-start px-5 py-2 space-y-4 text-gray-300'>
               {
                 menuItem.map((item) => (
