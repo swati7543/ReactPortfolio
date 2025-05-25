@@ -5,17 +5,19 @@ import { SkillsInfo } from "../../constant";
 // import Tilt from "react-parallax-tilt";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap } from "react-icons/fa";
+import { SiTailwindcss, SiMui } from "react-icons/si";
 
 
 const technicalSkills = [
-  { name: 'HTML', percent: 90, icon: '🌐' },
-  { name: 'CSS', percent: 60, icon: '🎨' },
-  { name: 'Javascript', percent: 75, icon: '📜' },
-  { name: 'React', percent: 75, icon: '⚛️' },
-  { name: 'Tailwind css', percent: 65, icon: '⚛️' },
-  { name: 'MUI', percent: 70, icon: '⚛️' },
-  { name: 'Bootstrap', percent: 60, icon: '⚛️' },
-]
+  { name: 'HTML', percent: 90, icon: FaHtml5 },
+  { name: 'CSS', percent: 60, icon: FaCss3Alt },
+  { name: 'JavaScript', percent: 75, icon: FaJs },
+  { name: 'React', percent: 75, icon: FaReact },
+  { name: 'Tailwind CSS', percent: 65, icon: SiTailwindcss },
+  { name: 'MUI', percent: 70, icon: SiMui },
+  { name: 'Bootstrap', percent: 60, icon: FaBootstrap },
+];
 
 const professionalSkills = [
   { name: 'Creativity', percent: 80 },
@@ -119,7 +121,7 @@ const Skills = ({ percent = 90, title = "Creativity" }) => {
               <div key={i} className="mb-6">
                 <div className="flex justify-between items-center mb-1">
                   <span className="flex items-center gap-2">
-                    <span>{skill.icon}</span> {skill.name}
+                    <span><skill.icon className="text-2xl text-cyan-400" /></span> {skill.name}
                   </span>
                   <span>{skill.percent}%</span>
                 </div>
