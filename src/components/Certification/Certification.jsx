@@ -87,6 +87,7 @@ const Certification = () => {
                                             <img
                                                 src={ele.img}
                                                 alt={`${ele.heading} certificate`}
+                                                loading="lazy"
                                                 className="w-full rounded-xl mb-4 object-cover"
                                             />
                                         )}

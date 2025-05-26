@@ -88,12 +88,6 @@ const Skills = ({ percent = 90, title = "Creativity" }) => {
                         key={skill.name}
                         className="flex items-center justify-center space-x-2 border-2 border-gray-700 rounded-3xl py-2 px-3 text-center"
                       >
-                        {/* Uncomment this if you're using icons */}
-                        {/* <img
-              src={skill.logo}
-              alt={`${skill.name} logo`}
-              className="w-5 h-5 sm:w-6 sm:h-6"
-            /> */}
                         <span className="text-xs sm:text-sm text-gray-300">{skill.name}</span>
                       </div>
                     ))}

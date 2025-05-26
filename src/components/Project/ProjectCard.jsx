@@ -7,7 +7,8 @@ const ProjectCard = ({ title, main, href, sourselink, imgsrc,aos }) => {
         >
 
             <div className='flex-1 w-48 '>
-                <img className='md:p-4' src={imgsrc} alt="" />
+                <img className='md:p-4' src={imgsrc}  alt="project img"
+                    loading="lazy" />
                 < h3 className='md:px-4 text-xl md:text-2xl font-bold leading-normal' >
                     {title}
                 </h3 >

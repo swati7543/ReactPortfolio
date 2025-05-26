@@ -10,7 +10,11 @@ import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import Cursor from './components/Cursor';
 import Snowfall from './components/Snowfall';
-import Certification from './components/Certification/Certification';
+import { lazy, Suspense } from 'react';
+import Loader from './components/Loader';
+// import Certification from './components/Certification/Certification';
+
+const Certification = lazy(() => import('./components/Certification/Certification')); // Lazy load your component
 
 
 function App() {
@@ -22,15 +26,17 @@ function App() {
         <Cursor />
         <Snowfall />
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          {/* <Route path="/experience" element={<Experience />} /> */}
-          <Route path="/project" element={<Project />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/certification" element={<Certification />} /> 
-        </Routes>
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            {/* <Route path="/experience" element={<Experience />} /> */}
+            <Route path="/project" element={<Project />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/certification" element={<Certification />} />
+          </Routes>
+        </Suspense>
 
         <Footer />
 
