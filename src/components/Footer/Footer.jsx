@@ -3,14 +3,6 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  // Smooth scroll function
-  const handleScroll = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
@@ -20,7 +12,7 @@ const Footer = () => {
           {[
             { name: "About", path: "/about" },
             { name: "Skills", path: "/skills" },
-            { name: "Projects", path: "/project" },   // route is 'project' not 'projects'
+            { name: "Projects", path: "/project" },  
             { name: "Education", path: "/education" },
             { name: "Certification", path: "/certification" },
           ].map((item, index) => (

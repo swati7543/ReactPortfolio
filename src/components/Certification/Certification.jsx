@@ -57,8 +57,6 @@ const Certification = () => {
             link: 'https://simpli.app.link/6t4C5gAUfTb',
 
         },
-
-
     ]
     return (
         <>
