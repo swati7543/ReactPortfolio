@@ -35,7 +35,7 @@ const Home = () => {
                         <p className="text-sm md:p-0 p-2 md:text-2xl tracking-tight mt-4 font-display: swap;">
                             "A Software developer passionate about building modern, responsive, and user-friendly websites using React, Tailwind CSS, and more."
                         </p>
-                        <a href="/Swati-Resume.pdf" download>
+                        <a href="/Swati_Resume.pdf" download>
                             <button className="mt-5 cursor-pointer text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-cyan-400 shadow-[2px_2px_8px_1px_cyan-400]">
                                 Download Resume
                             </button>
